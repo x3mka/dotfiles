@@ -68,4 +68,8 @@ if [ -d ~/.profile.d/zsh ]; then
   unset i
 fi
 
+# Local config
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
 echo 'Profile loaded => x3mka!'
+
