@@ -37,7 +37,7 @@ source /etc/profile.d/rvm.sh
 
 # Customize to your needs...
 export EDITOR="vim"
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
+export PATH=$PATH:/usr/local/bin:/usr/local/sbin:$HOME/bin
 
 source_sh () {
   emulate -LR sh
