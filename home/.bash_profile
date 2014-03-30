@@ -23,12 +23,4 @@ if [ -d ~/.profile.d/bash ]; then
   unset i
 fi
 
-# load application configurations
-if [ -d ~/.apps.d ]; then
-  for f in ~/.apps.d/*.sh; do
-    echo "Configuring ${f}..."
-    source $f;
-  done
-fi
-
 echo 'Profile loaded => x3mka!'

@@ -29,3 +29,39 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git rvm rails gem heroku powder git-flow cap)
 
 source $ZSH/oh-my-zsh.sh
+
+
+# Customize to your needs...
+export EDITOR="vim"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
+
+source_sh () {
+  emulate -LR sh
+  . "$@"
+}
+
+echo 'Loading zsh profile...'
+
+# load all customizations from ~/.profile.d/common directory
+if [ -d ~/.profile.d/common ]; then
+  for i in ~/.profile.d/common/*.sh; do
+    if [ -r $i ]; then
+      echo "Loading ${i}..."
+      source_sh $i
+    fi
+  done
+  unset i
+fi
+
+# load all customizations from ~/.profile.d/zsh directory
+if [ -d ~/.profile.d/zsh ]; then
+  for i in ~/.profile.d/zsh/*.sh; do
+    if [ -r $i ]; then
+      echo "Loading ${i}..."
+      source_sh $i
+    fi
+  done
+  unset i
+fi
+
+echo 'Profile loaded => x3mka!'
