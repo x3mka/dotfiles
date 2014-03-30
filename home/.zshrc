@@ -31,6 +31,10 @@ plugins=(git rvm rails gem heroku powder git-flow cap)
 source $ZSH/oh-my-zsh.sh
 
 
+echo "Sourcing ruby/rvm.."
+source /etc/profile.d/vagrant_ruby.sh
+source /etc/profile.d/rvm.sh
+
 # Customize to your needs...
 export EDITOR="vim"
 export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
