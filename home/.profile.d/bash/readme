@@ -1,0 +1,2 @@
+Keep in mind /etc/profile is sourced for bash. This script can contain sourcing of all *.sh scripts inside /etc/profile.d/
+Such things like rvm can be already there.
