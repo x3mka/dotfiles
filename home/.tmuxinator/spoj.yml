@@ -21,8 +21,8 @@ root: ~/work/mygithub/spoj/
 pre_tab: rvm use ruby-2.1.1@spoj
 
 windows:
-  - editor:
-      layout: 070b,211x66,0,0{128x66,0,0,0,82x66,129,0,3}
+  - development: 
+      layout: 070b,211x66,0,0{128x66,0,0,0,82x66,129,0,3} 
       panes:
         - vim
-        - guard  
+        - guard
