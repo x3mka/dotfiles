@@ -19,10 +19,8 @@ root: ~/work/mygithub/spoj/
 # tmux_command: byobu
 
 windows:
-  - editor:
-      layout: main-vertical
+  - development: 
+      layout: 070b,211x66,0,0{128x66,0,0,0,82x66,129,0,3} 
       panes:
         - vim
         - guard
-  - server: bundle exec rails s
-  - logs: tail -f log/development.log

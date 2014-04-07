@@ -70,4 +70,4 @@ fi
 
 echo 'Profile loaded => x3mka!'
 
-
+export DISABLE_AUTO_TITLE=true
