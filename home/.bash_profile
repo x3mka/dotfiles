@@ -28,3 +28,6 @@ fi
 echo 'Profile loaded => x3mka!'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# fix tmux windows naming
+export DISABLE_AUTO_TITLE=true

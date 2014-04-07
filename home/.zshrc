@@ -70,4 +70,5 @@ fi
 
 echo 'Profile loaded => x3mka!'
 
+# fix tmux windows naming
 export DISABLE_AUTO_TITLE=true
