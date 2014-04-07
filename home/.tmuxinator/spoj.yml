@@ -18,7 +18,7 @@ root: ~/work/mygithub/spoj/
 # Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
 # tmux_command: byobu
 
-pre_tab: rvm use ruby-2.1.1@spoj
+pre_window: rvm use ruby-2.1.1@spoj
 
 windows:
   - development: 
