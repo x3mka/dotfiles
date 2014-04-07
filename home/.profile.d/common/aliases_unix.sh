@@ -1,5 +1,4 @@
 # override default ps command to include additional info by default
-alias ps='ps -ef'
 alias tlf="tail -f"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
